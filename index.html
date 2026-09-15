@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070912">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="Experiência interativa de Engenharia de Software para Feira Vocacional 2026.">
+  <title>Engenharia de Software | UEPA — Feira Vocacional 2026</title>
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23000000'/%3E%3Cpath d='M18 25h64v12H55v38H43V37H18z' fill='%23ffd500'/%3E%3C/svg%3E">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="progress"></div>
+  <div class="noise"></div>
+  <div class="cursor-glow"></div>
+
+  <header class="navbar">
+    <a class="brand" href="#inicio"><span>&lt;/&gt;</span> ENG. SOFTWARE</a>
+    <nav id="nav">
+      <a href="#inicio">Início</a><a href="#curso">O Curso</a><a href="#disciplinas">Disciplinas</a>
+      <a href="#tecnologias">Tecnologias</a><a href="#projetos">Projetos</a><a href="#carreiras">Carreiras</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-grid"></div>
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><i></i> FEIRA VOCACIONAL 2026</div>
+        <h1>ENGENHARIA<br><span>DE SOFTWARE</span></h1>
+        <p class="hero-tag">Não é só programar. É criar o que ainda não existe.</p>
+        <p class="hero-text">Engenharia de Software é transformar curiosidade em projeto: entender uma necessidade,
+          pensar em possibilidades, construir sistemas, testar, melhorar e colocar tecnologia para funcionar de verdade.
+          De aplicativos e jogos a inteligência artificial, robótica e plataformas digitais, você aprende a criar
+          soluções que podem chegar a milhares de pessoas.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#curso">Explorar o curso <b>↘</b></a>
+          <a class="btn ghost" href="#criar">O que eu posso criar?</a>
+        </div>
+        <div class="scroll-hint">↓ &nbsp; ROLE PARA DESCOBRIR</div>
+      </div>
+
+      <div class="ecosystem" id="ecosystem" aria-hidden="true">
+        <div class="core">SOFTWARE<br><small>ENGINE</small></div>
+        <div class="orb o1">AI</div>
+        <div class="orb o2">⌘</div>
+        <div class="orb o3">⚙</div>
+        <div class="orb o4">☁</div>
+        <div class="orb o5">◈</div>
+        <div class="orb o6">▣</div>
+        <span class="wire w1"></span><span class="wire w2"></span><span class="wire w3"></span>
+        <span class="wire w4"></span><span class="wire w5"></span><span class="wire w6"></span>
+      </div>
+    </section>
+
+    <section class="section" id="curso">
+      <div class="section-head reveal"><span>01 / O CURSO</span>
+        <h2>Mas afinal... <em>o que é</em><br>Engenharia de Software?</h2>
+      </div>
+      <p class="lead reveal">É uma área que combina tecnologia, lógica, criatividade e trabalho em equipe para construir
+        software de forma planejada e confiável. Não se trata apenas de escrever código: você aprende a investigar
+        necessidades, desenhar soluções, escolher tecnologias, organizar dados, testar, corrigir, publicar e evoluir
+        sistemas ao longo do tempo.</p>
+      <div class="flow">
+        <article class="flow-card reveal"><strong>01</strong>
+          <div class="icon">✦</div>
+          <h3>IDEIA</h3>
+          <p>Observar uma necessidade, fazer perguntas e transformar uma ideia inicial em uma possibilidade concreta.
+          </p>
+        </article>
+        <article class="flow-card reveal"><strong>02</strong>
+          <div class="icon">◇</div>
+          <h3>PROJETO</h3>
+          <p>Definir funcionalidades, organizar informações e pensar na experiência de quem vai usar a solução.</p>
+        </article>
+        <article class="flow-card reveal"><strong>03</strong>
+          <div class="icon">&lt;/&gt;</div>
+          <h3>CÓDIGO</h3>
+          <p>Usar linguagens, ferramentas e boas práticas para construir aquilo que foi planejado.</p>
+        </article>
+        <article class="flow-card reveal"><strong>04</strong>
+          <div class="icon">✓</div>
+          <h3>SOLUÇÃO</h3>
+          <p>Testar, publicar, acompanhar resultados e melhorar continuamente aquilo que foi criado.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section universe universe-new" id="universo">
+      <div class="universe-intro reveal">
+        <div class="section-head"><span>02 / UNIVERSO</span>
+          <h2>Você não aprende<br><em>apenas a programar.</em></h2>
+        </div>
+        <p>Programação é uma ferramenta. Engenharia de Software é aprender a enxergar o problema inteiro — pessoas,
+          dados, sistemas, segurança e tecnologia.</p>
+        <div class="universe-counter"><strong>20</strong><span>áreas conectadas<br>ao universo do software</span></div>
+        <button class="btn primary universe-open" id="universeOpen" type="button">Explorar este universo ↗</button>
+      </div>
+      <div class="universe-showcase reveal">
+        <div class="universe-center">
+          <div class="pulse-ring"></div>
+          <div class="center-icon">&lt;/&gt;</div><strong>SOFTWARE</strong><small>ENGINEERING</small>
+        </div>
+        <div class="universe-rail" id="nodes"></div>
+      </div>
+      <div class="universe-selected reveal" id="universeSelected"><span>COMECE POR AQUI</span>
+        <h3>Um universo inteiro além do código.</h3>
+        <p>Escolha uma das áreas para descobrir como ela se conecta à Engenharia de Software.</p>
+      </div>
+      <div class="mini-modal" id="universeModal" aria-hidden="true">
+        <div class="mini-modal-box"><button class="mini-close" id="universeClose" aria-label="Fechar">×</button><span
+            id="uniModalTag">UNIVERSO</span>
+          <h3 id="uniModalTitle">Um universo inteiro além do código.</h3>
+          <p id="uniModalText">Engenharia de Software conecta programação, dados, inteligência artificial, segurança,
+            interfaces, arquitetura, robótica e muitas outras áreas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="disciplinas">
+      <div class="section-head reveal">
+        <span>03 / DISCIPLINAS</span>
+        <h2>O que você vai<br><em>encontrar pela frente?</em></h2>
+      </div>
+
+      <div class="discipline-carousel reveal" id="disciplineGrid"></div>
+    </section>
+
+    <section class="section creations" id="criar">
+      <div class="section-head reveal">
+        <span>04 / POSSIBILIDADES</span>
+        <h2>Agora imagine tudo<br>o que <em>você pode criar.</em></h2>
+      </div>
+
+      <div class="creation-carousel reveal" id="creationGrid"></div>
+    </section>
+
+    <section class="section" id="tecnologias">
+      <div class="section-head reveal"><span>05 / TECNOLOGIAS</span>
+        <h2>Ferramentas que podem fazer<br>parte da <em>sua jornada.</em></h2>
+      </div>
+      <p class="lead reveal">A tecnologia muda rápido — e isso faz parte da profissão. Você não precisa decorar todas as
+        ferramentas; precisa aprender a entender conceitos, escolher recursos adequados e continuar aprendendo.
+        Linguagens, bancos de dados, APIs, sistemas operacionais, nuvem, controle de versão, dispositivos e frameworks
+        entram como ferramentas para transformar ideias em produtos reais.</p>
+      <div class="tech-cloud" id="techCloud"></div>
+    </section>
+
+    <!-- =========================================
+     05.1 — LINGUAGENS
+========================================= -->
+
+    <section class="section languages-section" id="linguagens">
+
+      <div class="section-head languages-head reveal">
+
+        <span>05.1 / LINGUAGENS</span>
+
+        <h2>
+          Cada linguagem tem
+          <br>
+          <em>um jeito de criar.</em>
+        </h2>
+
+        <p class="lead">
+          Não existe uma única linguagem que faça tudo.
+          Cada uma possui características, usos e possibilidades
+          diferentes. Clique para explorar.
+        </p>
+
+      </div>
+
+
+      <div class="language-explorer reveal">
+
+        <!-- LISTA -->
+        <div class="language-list" id="languageList">
+
+          <button class="language-btn active" data-language="Python">
+            <span>01</span>
+            <strong>Python</strong>
+            <b>↗</b>
+          </button>
+
+          <button class="language-btn" data-language="JavaScript">
+            <span>02</span>
+            <strong>JavaScript</strong>
+            <b>↗</b>
+          </button>
+
+          <button class="language-btn" data-language="TypeScript">
+            <span>03</span>
+            <strong>TypeScript</strong>
+            <b>↗</b>
+          </button>
+
+          <button class="language-btn" data-language="Java">
+            <span>04</span>
+            <strong>Java</strong>
+            <b>↗</b>
+          </button>
+
+          <button class="language-btn" data-language="C">
+            <span>05</span>
+            <strong>C</strong>
+            <b>↗</b>
+          </button>
+
+          <button class="language-btn" data-language="C++">
+            <span>06</span>
+            <strong>C++</strong>
+            <b>↗</b>
+          </button>
+
+          <button class="language-btn" data-language="Kotlin">
+            <span>07</span>
+            <strong>Kotlin</strong>
+            <b>↗</b>
+          </button>
+
+          <button class="language-btn" data-language="SQL">
+            <span>08</span>
+            <strong>SQL</strong>
+            <b>↗</b>
+          </button>
+
+        </div>
+
+
+        <!-- PAINEL -->
+        <div class="language-display" id="languageDisplay">
+
+          <div class="language-display-top">
+            <span id="languageCategory">EXPLORE AS LINGUAGENS</span>
+          </div>
+
+          <h3 id="languageTitle">
+            Cada linguagem tem<br>
+            um jeito de criar.
+          </h3>
+
+          <p id="languageDescription">
+            Escolha uma linguagem ao lado para descobrir suas características,
+            possibilidades e ver um exemplo de código.
+          </p>
+
+          <!-- BLOCO DE CÓDIGO -->
+          <div class="language-code">
+
+            <div class="code-header">
+              <i></i>
+              <i></i>
+              <i></i>
+
+              <span id="languageFile">
+                EXPLORE
+              </span>
+            </div>
+
+            <code id="languageCode">
+            &lt; clique em uma linguagem para começar &gt;
+        </code>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section projects" id="projetos">
+      <div class="section-head reveal"><span>06 / PROJETOS</span>
+        <h2>Você <em>aprende fazendo.</em></h2>
+      </div>
+      <div class="project-stage reveal">
+        <div class="project-list" id="projectList"></div>
+        <div class="project-result" id="projectResult">
+          <span>ESCOLHA UM PROJETO</span>
+          <h3>PROBLEMA<br><b>→</b> TECNOLOGIA<br><b>→</b> SOLUÇÃO</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hardware">
+      <div class="section-head reveal"><span>07 / HARDWARE + SOFTWARE</span>
+        <h2>Do hardware ao<br><em>software.</em></h2>
+      </div>
+      <div class="pipeline reveal">
+        <div>SENSOR<small>percebe</small></div><b>→</b>
+        <div>MICROCONTROLADOR<small>processa</small></div><b>→</b>
+        <div>SOFTWARE<small>decide</small></div><b>→</b>
+        <div>INTERNET<small>conecta</small></div><b>→</b>
+        <div>USUÁRIO<small>interage</small></div>
+      </div>
+      <div class="chips reveal"><span>ROBÓTICA</span><span>IoT</span><span>AUTOMAÇÃO</span><span>CASAS
+          INTELIGENTES</span><span>INDÚSTRIA 4.0</span><span>WEARABLES</span></div>
+    </section>
+
+    <section class="section timeline-section">
+      <div class="section-head reveal"><span>08 / ROTINA</span>
+        <h2>Como é a vida de um<br><em>engenheiro de software?</em></h2>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section class="section" id="carreiras">
+      <div class="section-head reveal"><span>09 / CARREIRAS</span>
+        <h2>E depois<br><em>da graduação?</em></h2>
+      </div>
+      <div class="career-grid" id="careerGrid"></div>
+    </section>
+    <!--
+    <section class="section quiz-section" id="perfil">
+      <div class="section-head reveal"><span>10 / PERFIL</span>
+        <h2>Talvez Engenharia<br>de Software <em>seja para você.</em></h2>
+      </div>
+      <div class="quiz-card reveal" id="quizCard"></div>
+    </section>    
+-->
+
+
+    <section class="section myths">
+      <div class="section-head reveal"><span>10 / MITOS</span>
+        <h2>Vamos <em>quebrar</em> alguns mitos.</h2>
+      </div>
+      <div class="myths-grid">
+        <article class="myth reveal"><span>MITO</span>
+          <h3>“Preciso ser um gênio da matemática.”</h3>
+          <div><b>VERDADE</b>
+            <p>Você não precisa chegar dominando matemática avançada. O importante é desenvolver raciocínio, aprender
+              conceitos aos poucos e saber aplicar o que estudou para resolver situações reais.</p>
+          </div>
+        </article>
+        <article class="myth reveal"><span>MITO</span>
+          <h3>“Engenharia de Software é só programação.”</h3>
+          <div><b>VERDADE</b>
+            <p>Programação é uma ferramenta importante, mas o trabalho envolve muito mais: entender necessidades,
+              projetar sistemas, organizar dados, testar, pensar em segurança, colaborar e tomar decisões técnicas.</p>
+          </div>
+        </article>
+        <article class="myth reveal"><span>MITO</span>
+          <h3>“Vou trabalhar sozinho.”</h3>
+          <div><b>VERDADE</b>
+            <p>Grandes produtos digitais normalmente envolvem pessoas com diferentes conhecimentos. Comunicação, revisão
+              de código, divisão de tarefas e colaboração fazem parte da rotina.</p>
+          </div>
+        </article>
+        <article class="myth reveal"><span>MITO</span>
+          <h3>“Preciso saber programar antes de entrar.”</h3>
+          <div><b>VERDADE</b>
+            <p>Você não precisa saber programar antes. A formação existe para desenvolver fundamentos e, a partir deles,
+              ampliar sua capacidade de criar e resolver problemas com tecnologia.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!--
+    <section class="section challenge" id="desafio">
+      <div class="section-head reveal"><span>12 / DESAFIO</span>
+        <h2>Você consegue pensar<br>como um <em>engenheiro?</em></h2>
+      </div>
+      <div class="challenge-card reveal" id="challengeCard"></div>
+    </section>
+-->
+    <section class="section realworld">
+      <div class="section-head reveal"><span>11 / VIDA REAL</span>
+        <h2>Você provavelmente já usa<br><em>Engenharia de Software</em> todos os dias.</h2>
+      </div>
+      <div class="real-grid reveal"><a class="brand-card" href="https://www.instagram.com/" target="_blank"><span
+            class="brand-logo">◎</span><b>Instagram</b><small>Experiências sociais e conteúdo</small></a><a
+          class="brand-card" href="https://www.whatsapp.com/" target="_blank"><span
+            class="brand-logo">◔</span><b>WhatsApp</b><small>Comunicação em tempo real</small></a><a class="brand-card"
+          href="https://www.youtube.com/" target="_blank"><span class="brand-logo">▶</span><b>YouTube</b><small>Vídeo,
+            dados e recomendação</small></a><a class="brand-card" href="https://open.spotify.com/" target="_blank"><span
+            class="brand-logo">≋</span><b>Spotify</b><small>Streaming e recomendação</small></a><a class="brand-card"
+          href="https://www.uber.com/" target="_blank"><span class="brand-logo">U</span><b>Uber</b><small>Mobilidade
+            conectada</small></a>
+        <div class="brand-card"><span class="brand-logo">▣</span><b>Bancos digitais</b><small>Transações e
+            segurança</small></div>
+        <div class="brand-card"><span class="brand-logo">◉</span><b>Games</b><small>Interação e sistemas</small></div>
+        <div class="brand-card"><span class="brand-logo">◇</span><b>E-commerce</b><small>Dados, pagamentos e
+            logística</small></div>
+        <div class="brand-card"><span class="brand-logo">✦</span><b>Inteligência artificial</b><small>Modelos, dados e
+            automação</small></div>
+      </div>
+      <p class="lead reveal">Quando você pede um carro, assiste a um vídeo, envia uma mensagem, faz uma compra ou
+        acompanha uma aula, existe uma cadeia de sistemas trabalhando nos bastidores. Aplicações, bancos de dados,
+        servidores, redes, algoritmos, segurança e interfaces precisam conversar para que aquela experiência pareça
+        simples para quem está usando.</p>
+    </section>
+
+    <section class="section impact">
+      <div class="impact-copy reveal"><span>12 / IMPACTO</span>
+        <h2>Software<br><em>muda o mundo.</em></h2>
+        <p>A tecnologia já está presente na educação, saúde, mobilidade, comunicação, indústria, entretenimento e em
+          praticamente todos os setores. <strong>Estudar Engenharia de Software é aprender a participar dessa
+            transformação — não apenas usando as ferramentas, mas entendendo como elas são pensadas, construídas e
+            melhoradas.</strong></p>
+      </div>
+      <div class="impact-grid reveal">
+        <span>EDUCAÇÃO</span><span>SAÚDE</span><span>MOBILIDADE</span><span>SEGURANÇA</span><span>ACESSIBILIDADE</span><span>SUSTENTABILIDADE</span><span>COMUNICAÇÃO</span><span>INDÚSTRIA</span>
+      </div>
+    </section>
+
+    <section class="section fair">
+      <div class="section-head reveal"><span>13 / FEIRA VOCACIONAL</span>
+        <h2>Agora<br><em>é sua vez.</em></h2>
+      </div>
+      <div class="fair-grid">
+        <div class="fair-card reveal"><b>01</b>
+          <h3>CONHEÇA</h3>
+          <p>Conheça o que está por trás da formação, das áreas de estudo e das possibilidades profissionais.</p>
+        </div>
+        <div class="fair-card reveal"><b>02</b>
+          <h3>EXPERIMENTE</h3>
+          <p>Observe como conceitos saem da teoria e viram aplicativos, sistemas, jogos, automações e experiências
+            interativas.</p>
+        </div>
+        <div class="fair-card reveal"><b>03</b>
+          <h3>PERGUNTE</h3>
+          <p>Pergunte sobre estudos, projetos, carreira, tecnologias e sobre o caminho de quem escolhe trabalhar com
+            software.</p>
+        </div>
+      </div>
+      <p class="fair-line reveal">EXPLORE. &nbsp; PERGUNTE. &nbsp; EXPERIMENTE. &nbsp; CRIE.</p>
+    </section>
+
+    <section class="final section" id="final">
+      <div class="final-grid"></div>
+      <div class="final-content reveal">
+        <span>O FUTURO NÃO ESTÁ PRONTO.</span>
+        <h2>ELE PRECISA SER<br><em>DESENVOLVIDO.</em></h2>
+        <div class="final-name">ENGENHARIA DE SOFTWARE</div>
+        <p>Imagine. Transforme. Desenvolva.</p>
+        <a class="btn primary" href="#inicio">Explorar novamente ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>ENGENHARIA DE SOFTWARE</strong><small>Transformando ideias em soluções.</small></div>
+    <div class="footer-links"><a href="https://www.uepa.br/pt-br/content/castanhal-campus-xx" target="_blank"
+        rel="noopener">Universidade</a><a
+        href="https://sigaa.uepa.br/sigaa/public/curso/documentos.jsf?lc=pt_BR&id=8405271&nivel=G" target="_blank"
+        rel="noopener">Curso</a><a href="https://www.instagram.com/jes.uepa/" target="_blank"
+        rel="noopener">Instagram</a></div><small>Desenvolvimento J.Sant./Karlos Sousa • Feira Vocacional 2026</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
